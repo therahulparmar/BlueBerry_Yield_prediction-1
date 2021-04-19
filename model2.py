@@ -240,6 +240,8 @@ import pickle
 pickle.dump(scaler, open('scaler.pkl', 'wb'))
 
 
+
+
 # print(type(model2))
 
 # p1 = np.array([0.3])
