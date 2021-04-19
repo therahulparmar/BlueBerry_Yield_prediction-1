@@ -6,6 +6,7 @@ certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
 cycler==0.10.0
+Cython==0.29.23
 deepctr==0.8.5
 Flask==1.1.2
 Flask-Migrate==2.7.0
@@ -53,6 +54,9 @@ six==1.15.0
 sklearn==0.0
 SQLAlchemy==1.4.9
 tensorboard==2.4.1
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.4.1
+tensorflow-estimator==2.4.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
 typing-extensions==3.7.4.3
