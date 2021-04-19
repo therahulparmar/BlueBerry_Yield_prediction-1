@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from sqlalchemy import create_engine
 from keras.models import load_model
+from keras import backend as K
 
 import numpy
 from psycopg2.extensions import register_adapter, AsIs
