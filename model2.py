@@ -152,7 +152,7 @@ model2.add(Dense(1,activation='linear'))
 
 import keras
 import keras.backend as kb
-import tensorflow as tf
+# import tensorflow as tf
 
 # optimizer = Adam(lr=1e-3)
 
@@ -209,7 +209,7 @@ model3.add(Dense(32,activation='linear'))
 
 import keras
 import keras.backend as kb
-import tensorflow as tf
+# import tensorflow as tf
 
 # optimizer = Adam(lr=1e-3)
 model3.compile(optimizer='adam', 
