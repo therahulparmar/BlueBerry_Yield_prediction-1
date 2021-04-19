@@ -71,13 +71,13 @@ def predict():
 
     print('final Features',final_features)
     seed = [features[0]/46.58510536 ]
-    fruitset = [features[1]]
+    fruitset = [0]
     print("seed and fr", seed,fruitset)
     
     yyy = model1.predict(seed)
 
     yyy = np.argmax(yyy,axis=1)
-    # print(yyy)
+    print(yyy)
 
     yyyy = model2.predict(yyy)
     # print(yyyy)
@@ -88,14 +88,14 @@ def predict():
 
     # model.predict()
 
-
+    seed = seed[0]*46.58510536 
     maxY = 8969.401842 
     minY = 1637.704022
 
     yield11 = (maxY - minY)*(yyyy) + minY
     yield22 = (maxY - minY)*(yyyyP2) + minY
     
-    seed = seed[0]
+    # seed = seed[0]
     fruitset = fruitset[0]
     print("11 and 22 ", yield11[0][0],yield22[0][0])
     yield1 = float(yield11[0][0])
@@ -105,7 +105,9 @@ def predict():
     print(type(seed), type(fruitset),type(yield1))
     print("y",yield1,yield2)
 
-    entry = yieldTable(seed = seed, fruitset= fruitset, yield1= yield1, yield2= yield2)
+    fruitset = 0
+
+    entry = yieldTable(seed = seed, fruitset= fruitset,yield1= yield1 , yield2= yield2)
 
     db.session.add(entry)
     db.session.commit()
@@ -113,7 +115,7 @@ def predict():
     # # person_details(predict[0][0],predict[0][1],predict[0][2],predict[0][3],output)
 
     # print(output)
-    return render_template('home.html', prediction_text= f' Yield is  : {yield1}  : {yield2}')
+    return render_template('home.html', prediction_text= f' Yield is  : {yield1} ')
         
 @app.route('/predict_api',methods=['POST'])
 def results():

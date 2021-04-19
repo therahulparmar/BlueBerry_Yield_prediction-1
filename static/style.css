@@ -40,7 +40,7 @@ a {
 	font-family: Raleway-SemiBold;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: aqua;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -116,7 +116,7 @@ button {
   height: 40px !important;
   width: 100px;
   color: #000 !important;
-  background: #9D50BB !important;
+  background-color: aqua;
   background: -webkit-linear-gradient(to right, #9D50BB, #9D50BB) !important;  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #9D50BB, #9D50BB) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -133,4 +133,9 @@ button:hover {
   margin: auto;
   size: 10px;
 
+}
+
+.bolld{
+  font-weight: 800;
+  font-size:30px;
 }
