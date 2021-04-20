@@ -31,7 +31,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://akshay:@akshay1@localhost:5432/mydb'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ttzkojpddpctaj:c3e05efbdf687563415036f89fcf6b23d8eef98b9f94fa8716b91e4aed577751@ec2-54-224-120-186.compute-1.amazonaws.com:5432/d5td1eli3ontsg'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://kieshlwocksdna:4dd82bb4e8c068cebca0cfeef08e4e2827dc935be8162358ff967dd79d95cd0d@ec2-54-224-194-214.compute-1.amazonaws.com:5432/ddumvsg32dinek'
 
 
 
